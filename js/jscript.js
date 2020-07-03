@@ -10,4 +10,14 @@ $(document).ready(function () {
     }
   });
 
+  $("#left").click(function() {
+    var imgShow=$("#imgCollum img.show");
+    imgShow.removeClass("show");
+
+    if (imgShow.hasClass("first")) {
+      $("#imgCollum img.last").addClass("show");
+    } else {
+      imgShow.prev().addClass("show");
+    }
+  });
 });

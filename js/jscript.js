@@ -14,8 +14,9 @@ $(document).ready(function () {
     } else if (key==37) {
       prev()
     }
-
   });
+
+  
 });
 // -----functions----- //
   function next() {

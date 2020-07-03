@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  var imgList = [$(".1"),$(".2"),$(".3"),$(".4")];
 
   $("#nav div").click(function(){
     var selected = $(this);

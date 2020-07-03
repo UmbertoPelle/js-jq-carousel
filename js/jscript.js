@@ -6,12 +6,19 @@ $(document).ready(function () {
   $("#left").click(function() {
     prev()
   });
+
+  $(document).keydown(function(){
+    var key=event.which;
+    if (key==39) {
+      next()
+    } else if (key==37) {
+      prev()
+    }
+
+  });
 });
-
-
-
-// -----funcions----- //
-function next() {
+// -----functions----- //
+  function next() {
   var imgShow=$("#imgCollum img.show");
   imgShow.removeClass("show");
 
@@ -27,7 +34,7 @@ function next() {
   }
 }
 
-function prev() {
+  function prev() {
   var imgShow=$("#imgCollum img.show");
   imgShow.removeClass("show");
 

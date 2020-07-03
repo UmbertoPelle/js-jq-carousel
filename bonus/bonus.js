@@ -25,7 +25,5 @@ $(document).ready(function () {
       $("#imgCollum img.show").removeClass("show");
       $("#imgCollum .4").addClass("show");
     }
-
-    console.log(selected);
   });
 });

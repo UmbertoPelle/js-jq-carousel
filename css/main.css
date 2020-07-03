@@ -15,6 +15,7 @@
 
 #imgCollum{
   width: 80%;
+  position: relative;
 }
 
 img{
@@ -29,4 +30,30 @@ img{
 
 i{
   font-size: 90px;
+}
+
+#nav{
+  position: absolute;
+  bottom: 10px;
+  left:395px;
+  width: 300px;
+  height: 35px;
+  background-color: rgba(0,0,0,0.5);
+  margin: auto;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+#nav div{
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+#nav div.show{
+  background-color: #f0791bd4;
 }

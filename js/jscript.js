@@ -8,16 +8,11 @@ $(document).ready(function () {
   });
 
   $(document).keydown(function(){
-    var key=event.which;
-    if (key==39) {
-      next()
-    } else if (key==37) {
-      prev()
-    }
+    pressKey()
   });
 
-  
 });
+
 // -----functions----- //
   function next() {
   var imgShow=$("#imgCollum img.show");
@@ -50,3 +45,12 @@ $(document).ready(function () {
     navShow.prev().addClass("show");
   }
 }
+
+  function pressKey() {
+    var key=event.which;
+    if (key==39) {
+      next()
+    } else if (key==37) {
+      prev()
+    }
+  }

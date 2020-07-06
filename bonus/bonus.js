@@ -1,28 +1,12 @@
 $(document).ready(function () {
 
   $("#nav div").click(function(){
-    var selected = $(this);
+    $("#nav div").removeClass("show");
+    $(this).addClass("show");
+    var posizione= $(this).index();
 
-    if (selected.hasClass(1)) {
-      $("#nav div").removeClass("show");
-      selected.addClass("show");
-      $("#imgCollum img.show").removeClass("show");
-      $("#imgCollum .1").addClass("show");
-    } else if (selected.hasClass(2)) {
-      $("#nav div").removeClass("show");
-      selected.addClass("show");
-      $("#imgCollum img.show").removeClass("show");
-      $("#imgCollum .2").addClass("show");
-    } else if (selected.hasClass(3)) {
-      $("#nav div").removeClass("show");
-      selected.addClass("show");
-      $("#imgCollum img.show").removeClass("show");
-      $("#imgCollum .3").addClass("show");
-    } else {
-      $("#nav div").removeClass("show");
-      selected.addClass("show");
-      $("#imgCollum img.show").removeClass("show");
-      $("#imgCollum .4").addClass("show");
-    }
+    $("#imgCollum img.show").removeClass("show");
+    $("#imgCollum img").eq(posizione).addClass("show");
+
   });
 });

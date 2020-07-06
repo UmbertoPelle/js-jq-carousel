@@ -41,10 +41,9 @@ $(document).ready(function () {
   };
 
   function pressKey() {
-    var key=event.which;
-    if (key==39) {
+    if (event.which == 39||event.keycode == 39) {
       next()
-    } else if (key==37) {
+    } else if (event.which == 37||event.keycode == 37) {
       prev()
     }
   };
